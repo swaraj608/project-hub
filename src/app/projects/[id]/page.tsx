@@ -1,4 +1,3 @@
-
 import Link from "next/link";
 import { ArrowLeft, FolderKanban } from "lucide-react";
 import AppLayout from "@/components/AppLayout";

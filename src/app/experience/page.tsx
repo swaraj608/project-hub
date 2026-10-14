@@ -1,4 +1,3 @@
-
 import Link from "next/link";
 import { ArrowRight, Code2, Lightbulb, Rocket } from "lucide-react";
 import AppLayout from "@/components/AppLayout";
