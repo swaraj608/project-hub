@@ -1,0 +1,163 @@
+export type ProjectStatus = "In progress" | "Planning" | "Completed";
+
+export type Project = {
+  id: number;
+  title: string;
+  description: string;
+  category: string;
+  status: ProjectStatus;
+  progress: number;
+  color: string;
+  githubUrl?: string;
+  liveUrl?: string;
+  techStack: string[];
+  problem: string;
+  innovation: string;
+};
+
+export const starterProjects: Project[] = [
+  {
+    id: 101,
+    title: "MemoryMesh",
+    description: "Build a living digital map of forgotten stories, local traditions and community memories.",
+    category: "Digital Heritage",
+    status: "Planning",
+    progress: 10,
+    color: "violet",
+    techStack: ["Next.js", "TypeScript", "Maps"],
+    problem: "Local histories and oral traditions often disappear without documentation.",
+    innovation: "Connect people, places, stories and historical events into an explorable knowledge network.",
+  },
+  {
+    id: 102,
+    title: "CityPulse",
+    description: "Reveal the hidden problems of a city through citizen-powered intelligence.",
+    category: "Urban Intelligence",
+    status: "Planning",
+    progress: 5,
+    color: "cyan",
+    techStack: ["Next.js", "GIS", "Data Visualization"],
+    problem: "Small infrastructure problems can remain invisible until they affect many people.",
+    innovation: "Turn community reports about unsafe crossings, damaged roads and heat pockets into a visual city map.",
+  },
+  {
+    id: 103,
+    title: "TruthTrail",
+    description: "Explore how online claims spread and inspect the evidence behind them.",
+    category: "Information Integrity",
+    status: "Planning",
+    progress: 5,
+    color: "amber",
+    techStack: ["Next.js", "Graph Visualization", "AI"],
+    problem: "People often encounter claims without understanding their original sources or context.",
+    innovation: "Visualize source relationships, supporting evidence, contradictions and uncertainty rather than giving a simplistic true-or-false label.",
+  },
+  {
+    id: 104,
+    title: "OpenPath",
+    description: "Discover routes that account for accessibility beyond distance and travel time.",
+    category: "Accessibility",
+    status: "Planning",
+    progress: 8,
+    color: "emerald",
+    techStack: ["Maps", "Next.js", "Geospatial Data"],
+    problem: "The shortest route is not necessarily usable for every person.",
+    innovation: "Explore routes using accessibility factors such as steps, ramps, pavement conditions and wheelchair access.",
+  },
+  {
+    id: 105,
+    title: "HeatHaven",
+    description: "Find cooler routes and investigate neighbourhood heat exposure.",
+    category: "Climate Resilience",
+    status: "Planning",
+    progress: 8,
+    color: "rose",
+    techStack: ["GIS", "Weather Data", "Visualization"],
+    problem: "Urban heat can make ordinary journeys uncomfortable or dangerous.",
+    innovation: "Combine available temperature data, shade information and cooling locations to explore heat-aware journeys.",
+  },
+  {
+    id: 106,
+    title: "WhatIf Engine",
+    description: "Experiment with hypothetical scenarios and explore their possible consequences.",
+    category: "Experimental Systems",
+    status: "Planning",
+    progress: 12,
+    color: "violet",
+    techStack: ["TypeScript", "Simulation", "Charts"],
+    problem: "Complex decisions are difficult to understand through static explanations alone.",
+    innovation: "Let users adjust assumptions and compare multiple simulated outcomes, with uncertainty made explicit.",
+  },
+  {
+    id: 107,
+    title: "SkillGraph",
+    description: "Discover unexpected connections between skills, disciplines and career paths.",
+    category: "Knowledge Systems",
+    status: "Planning",
+    progress: 10,
+    color: "cyan",
+    techStack: ["Graph Theory", "Next.js", "Visualization"],
+    problem: "Traditional learning paths can hide valuable connections between seemingly unrelated subjects.",
+    innovation: "Build an interactive graph linking skills, projects, prerequisites and alternative learning routes.",
+  },
+  {
+    id: 108,
+    title: "WasteWitness",
+    description: "Make local waste flows visible, from discarded materials to possible reuse.",
+    category: "Circular Economy",
+    status: "Planning",
+    progress: 6,
+    color: "emerald",
+    techStack: ["Next.js", "Maps", "Data Visualization"],
+    problem: "Reusable materials can be discarded because people cannot find suitable reuse channels.",
+    innovation: "Map material streams and connect available reusable resources with potential community needs.",
+  },
+  {
+    id: 109,
+    title: "QuietAtlas",
+    description: "Explore places by sound intensity, sensory comfort and opportunities for quiet.",
+    category: "Human-Centred Technology",
+    status: "Planning",
+    progress: 5,
+    color: "cyan",
+    techStack: ["Maps", "Audio Data", "Next.js"],
+    problem: "Conventional place discovery rarely accounts for noise and sensory comfort.",
+    innovation: "Create a community-informed map of quieter spaces, with observations clearly distinguished from verified measurements.",
+  },
+  {
+    id: 110,
+    title: "PolicySandbox",
+    description: "Explore how changing a public policy assumption could affect different groups.",
+    category: "Civic Technology",
+    status: "Planning",
+    progress: 10,
+    color: "amber",
+    techStack: ["TypeScript", "Simulation", "Charts"],
+    problem: "Policy trade-offs can be difficult to communicate using dense documents alone.",
+    innovation: "Let users compare transparent, simplified scenarios and examine who may benefit or be disadvantaged.",
+  },
+  {
+    id: 111,
+    title: "Dialect Detective",
+    description: "Document regional expressions and discover how language varies across communities.",
+    category: "Language Preservation",
+    status: "Planning",
+    progress: 7,
+    color: "rose",
+    techStack: ["Next.js", "Audio", "Search"],
+    problem: "Regional vocabulary and expressions may be overlooked by mainstream digital language tools.",
+    innovation: "Build a community-contributed language atlas with regional phrases, pronunciations and cultural context.",
+  },
+  {
+    id: 112,
+    title: "RepairBeforeReplace",
+    description: "Explore repair options before deciding to discard a broken everyday object.",
+    category: "Sustainable Living",
+    status: "Planning",
+    progress: 8,
+    color: "emerald",
+    techStack: ["Next.js", "Search", "Knowledge Base"],
+    problem: "People may replace repairable products because useful repair knowledge is difficult to find.",
+    innovation: "Organize repair guides, diagnostic questions, part compatibility and local repair resources in one discovery interface.",
+  },
+];
