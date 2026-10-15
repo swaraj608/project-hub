@@ -3,6 +3,7 @@ import { ArrowLeft, FolderKanban } from "lucide-react";
 import AppLayout from "@/components/AppLayout";
 import { starterProjects } from "@/lib/projects";
 
+export const instant = false;
 export function generateStaticParams() {
   return starterProjects.map((project) => ({
     id: String(project.id),
