@@ -10,7 +10,6 @@ const navItems = [
   { label: "Projects", href: "/projects" },
   { label: "Innovation Lab", href: "/innovation-lab" },
   { label: "Workspace", href: "/workspace" },
-  { label: "Experience", href: "/experience" },
 ];
 
 export default function Navbar() {
