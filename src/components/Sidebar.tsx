@@ -2,17 +2,18 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+
 import {
   House,
   FolderKanban,
   Lightbulb,
   ListTodo,
   Settings,
-  FlaskConical,
   ArrowUpRight,
   Sparkles,
   CodeXml,
   ChevronRight,
+  ChartNoAxesCombined,
 } from "lucide-react";
 
 const navGroups = [
@@ -31,20 +32,20 @@ const navGroups = [
     ],
   },
   {
-    label: "EXPLORE",
-    items: [
-      {
-        label: "Innovation Lab",
-        href: "/innovation-lab",
-        icon: Lightbulb,
-      },
-      {
-        label: "Experience",
-        href: "/experience",
-        icon: FlaskConical,
-      },
-    ],
-  },
+  label: "EXPLORE",
+  items: [
+    {
+      label: "Innovation Lab",
+      href: "/innovation-lab",
+      icon: Lightbulb,
+    },
+    {
+      label: "Analytics & Insights",
+      href: "/analytics",
+      icon: ChartNoAxesCombined,
+    },
+  ],
+},
   {
     label: "PREFERENCES",
     items: [{ label: "Settings", href: "/settings", icon: Settings }],
